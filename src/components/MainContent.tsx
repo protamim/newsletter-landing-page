@@ -10,25 +10,25 @@ const MainContent = () => {
   return (
     <>
       <div className="max-w-screen-md h-[calc(75%-86px)] flex flex-col justify-center">
-        <h2 className="text-[2.7rem] font-bold text-white mb-3">
+        <h2 className="text-2xl sm:text-[2.7rem] 2xl:text-5xl sm:leading-tight font-bold text-white mb-4">
           Dive into new markets and ideas with 65,289 like-minded founders.
         </h2>
-        <p className="mb-10 max-w-[535px]">
+        <p className="mb-10 max-w-[535px] text-sm md:text-base">
           Save 2,000+ hours of market research with free 5-minute reports on AI,
           Crypto and more.
         </p>
-        <form className="flex items-center gap-4 mb-10 max-w-[540px]">
+        <form className="flex flex-col md:flex-row items-center gap-4 mb-10 max-w-[540px]">
           <input
             type="email"
             placeholder="Your Email address"
-            className="border border-solid border-[#E54F2D] rounded-lg px-4 py-3 placeholder:text-white bg-transparent flex-1 transition-all focus:outline-none outline-none focus:ring-1 focus:ring-[#E54F2D]"
+            className="border border-solid border-[#E54F2D] rounded-lg px-4 py-3 placeholder:text-white bg-transparent transition-all focus:outline-none outline-none focus:ring-1 focus:ring-[#E54F2D] w-full md:flex-1"
           />
-          <button className="bg-[#E54F2D] px-4 py-3 rounded-lg transition-all ease-in-out duration-300 hover:bg-[#be3a1c] hover:cursor-pointer">
+          <button className="bg-[#E54F2D] px-4 py-3 rounded-lg transition-all ease-in-out duration-300 hover:bg-[#be3a1c] hover:cursor-pointer w-full md:w-auto">
             Get Started {"->"}
           </button>
         </form>
         {/* authors */}
-        <div className="flex items-center gap-5 text-sm text-gray-400">
+        <div className="flex flex-col items-center gap-5 text-sm text-gray-400 md:flex-row">
           {/* clients */}
           <div className="flex items-center -space-x-1">
             <Image
